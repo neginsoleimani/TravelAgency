@@ -5,12 +5,68 @@
 */
 
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: black;
+}
 
+
+#landingPage{
+background-image: url("./images/image1.jpg");
+background-position: fixed;
+background-repeat:no-repeat;
+background-size: cover;
+width:100vw;
+height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: #9cc0fa;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+
+#signBtn {
+    color: #9cc0fa;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+
+#signBtn:hover{
+    background-color: #9cc0fa;
+    color: white;
+    transition: 0.8s;
 }
