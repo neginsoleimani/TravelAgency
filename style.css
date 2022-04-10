@@ -14,17 +14,18 @@
 }
 
 body {
-    background-color: black;
+    background-color: #f7f7f9;
+    font-family: 'Inter', sans-serif;
 }
 
 
-#landingPage{
-background-image: url("./images/image1.jpg");
-background-position: fixed;
-background-repeat:no-repeat;
-background-size: cover;
-width:100vw;
-height: 100vh;
+#landingPage {
+    background-image: url("./images/image1.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
 }
 
 nav {
@@ -33,7 +34,6 @@ nav {
     width: 90%;
     margin: 0 auto;
     padding: 30px 0;
-    font-family: 'Inter', sans-serif;
 }
 
 #logo {
@@ -48,7 +48,7 @@ nav a {
     font-weight: 600;
 }
 
-nav a:hover{
+nav a:hover {
     color: #9cc0fa;
     transition: 1s;
     transition-delay: 0.2s;
@@ -65,8 +65,80 @@ nav a:hover{
 }
 
 
-#signBtn:hover{
+#signBtn:hover {
     background-color: #9cc0fa;
     color: white;
     transition: 0.8s;
 }
+
+
+.Slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.Slogan h1,
+h6 {
+    text-align: center;
+    color: white;
+}
+
+.Slogan h1 {
+    font-size: 4rem;
+    line-height: 1.32;
+}
+
+.Slogan h6 {
+    padding-top: 10px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.reservationTicket {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.selectionBox {
+    background-color: white;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 16px 16px 0 0;
+}
+
+.selectionBox h4 {
+    padding: 20px 0;
+    color: #475360;
+}
+
+.reservationBoxContainer {
+    background-color: white;
+    border-radius: 0 16px 16px 16px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.reservationBox {
+    border: 3px solid #f7f7f9;
+    width: 35%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reservationBox h5 {
+    color: #9aa4b6;
+    padding: 6px 0;
+}
+
+.reservationBox h3 {
+    color: #475360;
+}
+
