@@ -25,7 +25,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 nav {
@@ -113,12 +113,14 @@ h6 {
 .selectionBox h4 {
     padding: 20px 0;
     color: #475360;
+    display: flex;
+    align-items: center;
 }
 
 .reservationBoxContainer {
     background-color: white;
     border-radius: 0 16px 16px 16px;
-    height: 200px;
+    height: 250px;
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
@@ -142,3 +144,169 @@ h6 {
     color: #475360;
 }
 
+.mainContainer {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer h1 {
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: #122232;
+    margin-bottom: 30px;
+}
+
+.specialBox {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    border-radius: 16px;
+    width: 65%;
+    padding: 5px 0;
+}
+
+.specialBox a {
+    color: #9aa4b6;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    height: 430px;
+    margin: 0 20px;
+    border-radius: 32px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card img {
+    width: 90%;
+    border-radius: 32px;
+    margin: 0 auto;
+}
+
+.card-title {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+
+.a-blue {
+    background-color: #edecfe;
+    color: #a1a3e9;
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
+
+.a-pink {
+    background-color: #fee9f4;
+    color: #ed4fa0;
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
+.card-title h4 {
+    color: #9aa4b6;
+    padding-left: 12px;
+    font-size: 0.8rem;
+}
+
+.card h2 {
+    color: #122232;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.buy-ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.buy-ticket a {
+    text-decoration: none;
+    background-color: #f0f7ff;
+    color: #6ca3f6;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.short {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 120px;
+    margin-top: 50px;
+}
+
+.short img {
+    width: 80%;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.short h1 {
+    color: #122232;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.short p {
+    color: #475360;
+    font-weight: 500;
+    text-align: justify;
+    padding-bottom: 35px;
+    width: 90%;
+}
+
+.short a {
+    text-decoration: none;
+    background-color: #3e86f5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 1px 18px 30px -10px rgba(27,99,186,0.75);
+    -webkit-box-shadow: 1px 18px 30px -10px rgba(27,99,186,0.75);
+    -moz-box-shadow: 1px 18px 30px -10px rgba(27,99,186,0.75);
+}
+
+.recommendationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommendationContainer h1{
+    color: #122232;
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-top:60px;
+}
