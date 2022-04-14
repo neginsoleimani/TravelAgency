@@ -310,3 +310,104 @@ h6 {
     font-weight: bold;
     margin-top:60px;
 }
+
+.recommend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.recommend a{
+    padding: 0 30px;
+    text-decoration: none;
+    color: #475360;
+    font-weight: bold;
+}
+
+#recomend-active{
+padding: 10px  30px;
+background-color: white;
+border-radius: 14px;
+color: #3e86f5;
+}
+
+.recommendcard-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-gap:20px;
+    padding:0 120px ;
+    margin-bottom: 50px;
+}
+
+.recommendcard{
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.recommendcard img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.recommendcard h4{
+    color: #475360;
+    padding:8px;
+}
+
+.recommendcard h5{
+    color: #9aa4b6;
+    padding: 5px 8px;
+}
+
+
+.discount{
+    padding: 100px ;
+    background-color: #3e86f5;
+    margin:  0 auto;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    width: 85%;
+
+}
+
+.discount h1{
+    padding: 50px 0;
+}
+
+.discount a{
+    text-decoration: none;
+    padding:15px 30px;
+    color: #3e86f5;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    padding-right: 100px;
+    padding-left: 120px;
+    font-weight: bold;
+}
+
+footer h5{
+    color: #9aa4b6;
+    font-size: 0.9rem;
+}
+
+.footer-link{
+    display: flex;
+    align-items: center;
+}
+
+.footer-link a{
+padding: 0 20px;
+text-decoration: none;
+color: #475360;
+}
