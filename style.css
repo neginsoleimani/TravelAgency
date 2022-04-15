@@ -28,7 +28,19 @@ body {
     height: 100vh;
 }
 
-nav {
+@media screen and (max-width: 800px) {
+
+    #landingPage {
+        width: 100vw;
+        height: 100vh;
+    }
+
+}
+
+/* Navbar
+==================================================*/
+
+.DesktopNavbar {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -36,24 +48,102 @@ nav {
     padding: 30px 0;
 }
 
-#logo {
+.logo {
     font-size: 1.8rem;
     font-weight: bold;
 }
 
-nav a {
+.DesktopNavbar a {
     margin: 0 20px;
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
 
-nav a:hover {
+.DesktopNavbar a:hover {
     color: #9cc0fa;
     transition: 1s;
     transition-delay: 0.2s;
 }
 
+.mobileNavbar {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .DesktopNavbar {
+        display: none;
+    }
+
+    .mobileNavbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    .Slogan h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .Slogan h6 {
+        display: none;
+    }
+
+    .mobileSearch {
+        display: block !important;
+    }
+
+    .mobileSearch input {
+        width: 80vw;
+        margin-top: 30px;
+        padding: 3% 10%;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    input:focus {
+        outline: none;
+        color: #fff;
+    }
+
+
+    main {
+        display: none;
+    }
+
+    .reservationTicket {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .mobileFooter{
+        display: flex !important;
+        background-color: white;
+        height:100%;
+        margin-top:80px;
+        border-radius: 16px 16px 0 0 ;
+    }
+}
 
 #signBtn {
     color: #9cc0fa;
@@ -70,6 +160,7 @@ nav a:hover {
     color: white;
     transition: 0.8s;
 }
+
 
 
 .Slogan {
@@ -102,6 +193,10 @@ h6 {
     margin: 0 auto;
 }
 
+.reservationTicket h3 {
+    cursor: pointer;
+}
+
 .selectionBox {
     background-color: white;
     width: 25%;
@@ -115,18 +210,18 @@ h6 {
     color: #475360;
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     margin-top: 20px;
     cursor: pointer;
 }
 
-.search{
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3e86f5;
     border-radius: 60px;
-    width:180px;
+    width: 180px;
     height: 180px;
     cursor: pointer;
 }
@@ -159,7 +254,8 @@ h6 {
 }
 
 .mainContainer {
-    margin: 5rem 0;
+    margin-top: 18rem;
+    margin-bottom:5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +277,10 @@ h6 {
     border-radius: 16px;
     width: 65%;
     padding: 5px 0;
+}
+
+.mobileSearch {
+    display: none;
 }
 
 .specialBox a {
@@ -308,32 +408,32 @@ h6 {
     padding: 10px 20px;
     border-radius: 10px;
     font-weight: bold;
-    box-shadow: 1px 18px 30px -10px rgba(27,99,186,0.75);
-    -webkit-box-shadow: 1px 18px 30px -10px rgba(27,99,186,0.75);
-    -moz-box-shadow: 1px 18px 30px -10px rgba(27,99,186,0.75);
+    box-shadow: 1px 18px 30px -10px rgba(27, 99, 186, 0.75);
+    -webkit-box-shadow: 1px 18px 30px -10px rgba(27, 99, 186, 0.75);
+    -moz-box-shadow: 1px 18px 30px -10px rgba(27, 99, 186, 0.75);
 }
 
-.recommendationContainer{
+.recommendationContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.recommendationContainer h1{
+.recommendationContainer h1 {
     color: #122232;
     font-size: 2.7rem;
     font-weight: bold;
-    margin-top:60px;
+    margin-top: 60px;
 }
 
-.recommend{
+.recommend {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
 }
 
-.recommend a{
+.recommend a {
     padding: 0 30px;
     text-decoration: none;
     color: #475360;
@@ -341,48 +441,48 @@ h6 {
     cursor: pointer;
 }
 
-#recomend-active{
-padding: 10px  30px;
-background-color: white;
-border-radius: 14px;
-color: #3e86f5;
+#recomend-active {
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 14px;
+    color: #3e86f5;
 }
 
-.recommendcard-container{
+.recommendcard-container {
     display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    grid-gap:20px;
-    padding:0 120px ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0 120px;
     margin-bottom: 50px;
 }
 
-.recommendcard{
+.recommendcard {
     background-color: white;
     border-radius: 16px;
     padding: 15px;
     cursor: pointer;
 }
 
-.recommendcard img{
+.recommendcard img {
     width: 100%;
     border-radius: 16px;
 }
 
-.recommendcard h4{
+.recommendcard h4 {
     color: #475360;
-    padding:8px;
+    padding: 8px;
 }
 
-.recommendcard h5{
+.recommendcard h5 {
     color: #9aa4b6;
     padding: 5px 8px;
 }
 
 
-.discount{
-    padding: 100px ;
+.discount {
+    padding: 100px;
     background-color: #3e86f5;
-    margin:  0 auto;
+    margin: 0 auto;
     text-align: center;
     color: white;
     border-radius: 50px;
@@ -392,20 +492,20 @@ color: #3e86f5;
 
 }
 
-.discount h1{
+.discount h1 {
     padding: 50px 0;
 }
 
-.discount a{
+.discount a {
     text-decoration: none;
-    padding:15px 30px;
+    padding: 15px 30px;
     color: #3e86f5;
     background-color: white;
     font-weight: bold;
     border-radius: 16px;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -415,18 +515,22 @@ footer{
     font-weight: bold;
 }
 
-footer h5{
+footer h5 {
     color: #9aa4b6;
     font-size: 0.9rem;
 }
 
-.footer-link{
+.footer-link {
     display: flex;
     align-items: center;
 }
 
-.footer-link a{
-padding: 0 20px;
-text-decoration: none;
-color: #475360;
+.footer-link a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #475360;
+}
+
+.mobileFooter{
+    display: none;
 }

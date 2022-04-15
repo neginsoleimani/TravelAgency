@@ -14,8 +14,8 @@
 
 <body>
     <div id="landingPage">
-        <nav>
-            <div><a id="logo" href="#Travelo">Travelo</a></div>
+        <nav class="DesktopNavbar">
+            <div><a class="logo" href="#Travelo">Travelo</a></div>
             <div>
                 <a href="#Review">Review</a>
                 <a href="#Tips">Tips</a>
@@ -24,16 +24,27 @@
                 <a id="signBtn" href="#Sign in">Sign in</a>
             </div>
         </nav>
+    
+        <nav>
+            <div class="mobileNavbar">
+                <div><a class="logo" href="#Travelo">Travelo</a></div>
+                <div><i class="fa-solid fa-bars" style="color: white;font-size: 1.8rem;"></i></div>
+            </div>
+        </nav>
 
         <div class="Slogan">
             <h1>Discover Your Life,Travel<br>Where You Want</h1>
+            <div class="mobileSearch">
+                <input type="text" placeholder="search">
+            </div>
             <h6>Would you explore nature paradise in the world, let's find the <br> best destination in world with us.
             </h6>
         </div>
 
         <div class="reservationTicket">
             <div class="selectionBox">
-                <h4 style=" background-color:#edecfe; padding:0 30px;  border-radius:16px;"><i class="fa-solid fa-plane-departure" style="color: #3e86f5;padding-right: 10px;"></i>Flight </h4>
+                <h4 style=" background-color:#edecfe; padding:0 30px;  border-radius:16px;"><i
+                        class="fa-solid fa-plane-departure" style="color: #3e86f5;padding-right: 10px;"></i>Flight </h4>
                 <h4><i class="fa-solid fa-hotel" style="color: #3e86f5;padding-right: 10px; "></i> Hotel</h4>
             </div>
             <div class="reservationBoxContainer">
@@ -69,6 +80,11 @@
                 </div>
             </div>
         </div>
+        <div class="mobileFooter">
+            <div style="margin: 0 auto;"><i class="fa-solid fa-chevron-up" style="font-size: 2rem;color: #9aa4b6; margin-top:10px;"></i></div>
+        </div>
+        </div>
+
 
 
         <main>
@@ -191,11 +207,13 @@
             </div>
         </main>
 
-        
 
 
-        <footer>
-            <div><h5> © 2022 All rights of this website are reserved</h5></div>
+
+        <footer class="footer">
+            <div>
+                <h5> © 2022 All rights of this website are reserved</h5>
+            </div>
             <div class="footer-link">
                 <a href="">Review</a>
                 <a href="">Tips</a>
@@ -205,6 +223,7 @@
         </footer>
 
 
+         
 
 </body>
 
