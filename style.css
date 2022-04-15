@@ -114,7 +114,21 @@ h6 {
     padding: 20px 0;
     color: #475360;
     display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #3e86f5;
+    border-radius: 60px;
+    width:180px;
+    height: 180px;
+    cursor: pointer;
 }
 
 .reservationBoxContainer {
@@ -172,6 +186,7 @@ h6 {
 .specialBox a {
     color: #9aa4b6;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .card-container {
@@ -323,6 +338,7 @@ h6 {
     text-decoration: none;
     color: #475360;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #recomend-active{
@@ -344,6 +360,7 @@ color: #3e86f5;
     background-color: white;
     border-radius: 16px;
     padding: 15px;
+    cursor: pointer;
 }
 
 .recommendcard img{
@@ -370,6 +387,8 @@ color: #3e86f5;
     color: white;
     border-radius: 50px;
     width: 85%;
+    background-image: url("./images/820-8209279_white-world-map-png-world-map-white-png.png");
+    background-size: cover;
 
 }
 
